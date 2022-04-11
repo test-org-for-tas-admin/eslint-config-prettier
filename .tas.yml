@@ -3,7 +3,7 @@ framework: jest # mocha # framework should be as per your project
 
 preRun:
   command:
-    - npm install
+    - npm i
 preMerge:
   pattern:
      - "./test/lint-verify-fail.test.js"
