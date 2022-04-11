@@ -3,10 +3,7 @@ framework: jest # mocha # framework should be as per your project
 
 preRun:
   command:
-    - npm i
-preMerge:
-  pattern:
-     - "./test/lint-verify-fail.test.js"
+    - npm install
 postMerge:
   # THIRDLY - You need to set postMerge patterns.
   # These would be the glob patterns for the test cases that you want to execute in the post-merge jobs. A postMerge test execution job is initiated whenever a PR is merged into a branch.
